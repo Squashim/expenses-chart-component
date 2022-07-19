@@ -12,4 +12,19 @@ html {
 
 body {
   font-family: "DM sans", sans-serif;
+  background-color: hsl(27deg, 66%, 92%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+component-head {
+  background-color: hsl(10deg, 79%, 65%);
 }/*# sourceMappingURL=main.css.map */
