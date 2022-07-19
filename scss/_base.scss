@@ -5,11 +5,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-html {
+html{
   font-size: 18px;
 }
-
-body {
-  font-family: "DM sans", sans-serif;
-}/*# sourceMappingURL=main.css.map */
+body{
+  font-family: $font-default;
+}
