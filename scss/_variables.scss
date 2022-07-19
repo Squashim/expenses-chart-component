@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
 //primary colors
 $soft-red: hsl(10, 79%, 65%);
 $cyan: hsl(186, 34%, 60%);
@@ -8,8 +9,11 @@ $brown500: hsl(28, 10%, 53%);
 $cream: hsl(27, 66%, 92%);
 $pale-orange: hsl(33, 100%, 98%);
 
+//border
+$border-rad: .5rem;
+
 //font
 
-$font-default: 'DM sans', sans-serif;
+$font-default: 'DM Sans', sans-serif;
 $fw-light: 400;
 $fw-bold: 700;
