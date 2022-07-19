@@ -1,7 +1,5 @@
 # Frontend Mentor - Expenses chart component
 
-![Design preview for the Expenses chart component coding challenge](./design/desktop-preview.jpg)
-
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
@@ -23,8 +21,6 @@ Your users should be able to:
 - View the optimal layout for the content depending on their device's screen size
 - See hover states for all interactive elements on the page
 - **Bonus**: See dynamically generated bars based on the data provided in the local JSON file
-
-Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
 
 
 ## Got feedback for us?
