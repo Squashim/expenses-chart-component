@@ -18,11 +18,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 main {
   width: 100%;
+  max-width: 30rem;
   display: flex;
   flex-direction: column;
   padding: 4rem 1rem;
@@ -83,17 +84,31 @@ main {
   flex-direction: column;
   justify-content: center;
   gap: 0.5rem;
+  max-width: 2.5rem;
 }
 .component-body__chart .table__pillar .rect {
   background-color: hsl(10deg, 79%, 65%);
   border-radius: 0.2rem;
   min-width: 1.8rem;
   max-width: 100%;
+  cursor: pointer;
+}
+.component-body__chart .table__pillar .rect:hover {
+  background-color: #f29e8d;
+}
+.component-body__chart .table__pillar .rect.today {
+  background-color: hsl(186deg, 34%, 60%);
+}
+.component-body__chart .table__pillar .rect.today:hover {
+  background-color: #98c7cd;
 }
 .component-body__chart .table__pillar .text {
   color: hsl(28deg, 10%, 53%);
   font-size: 0.7rem;
   text-align: center;
+}
+.component-body__chart .table__pillar button {
+  font-size: 1rem;
 }
 .component-body__divider {
   background-color: hsl(27deg, 66%, 92%);
@@ -135,4 +150,12 @@ main {
 .component-body__summary--percent p:nth-child(2) {
   font-size: 0.9rem;
   color: hsl(28deg, 10%, 53%);
+}
+
+footer {
+  text-align: center;
+  font-size: 0.6rem;
+}
+footer .attribution a {
+  color: hsl(10deg, 79%, 65%);
 }/*# sourceMappingURL=main.css.map */

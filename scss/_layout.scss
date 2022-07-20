@@ -1,5 +1,6 @@
 main{
     width: 100%;
+    max-width: 30rem;
     display: flex;
     flex-direction: column;
     padding: 4rem 1rem;
@@ -71,16 +72,30 @@ main{
                 flex-direction: column;
                 justify-content: center;
                 gap: .5rem;
+                max-width: 2.5rem;
                 .rect{
                     background-color: $soft-red;
                     border-radius: .2rem;
                     min-width: 1.8rem;
                     max-width: 100%;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: lighten($soft-red, 10%);
+                    }
+                }
+                .rect.today{
+                    background-color: $cyan;
+                    &:hover{
+                        background-color: lighten($cyan, 10%);
+                    }
                 }
                 .text{
                     color: $brown500;
                     font-size: .7rem;
                     text-align: center;
+                }
+                button{
+                    font-size: 1rem;
                 }
             }
         }
@@ -133,6 +148,15 @@ main{
                     color: $brown500;
                 }
             }
+        }
+    }
+}
+footer{
+    text-align: center;
+    font-size: .6rem;
+    .attribution{
+        a{
+            color: $soft-red;
         }
     }
 }
