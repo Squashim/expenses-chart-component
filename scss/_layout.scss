@@ -61,9 +61,6 @@ main{
     
     &__chart{
         .table{
-            //temporary
-            height: 12rem;
-            //temporary
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
@@ -71,6 +68,8 @@ main{
                 list-style: none;
                 font-size: .7rem;
                 color: $brown500;
+                max-width: 2.2rem;
+                background-color: $soft-red;
             }
         }
     }
