@@ -1,4 +1,5 @@
-const rows = Array.from(document.querySelectorAll(".table__day"));
+const rows = Array.from(document.querySelectorAll(".table__pillar"));
+const rowsText = Array.from(document.querySelectorAll(".table__pillar p"));
 let chart = [
     {
       "day": "mon",
@@ -31,7 +32,7 @@ let chart = [
   ]
 
 for(let i=0; i<chart.length; i++){
-    rows[i].textContent = '<span class="rect">'+chart[i].day+'</span>';
+    rows[i].textContent = chart[i].day;
     rows[i].style.height = (chart[i].amount * 350) / 100 + "px";
 }
 
