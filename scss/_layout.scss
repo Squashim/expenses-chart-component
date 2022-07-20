@@ -63,13 +63,25 @@ main{
         .table{
             display: flex;
             flex-direction: row;
-            justify-content: space-evenly;
+            justify-content: space-between;
             align-items:flex-end;
+            margin-top: 1rem;
             &__pillar{
-                list-style: none;
-                font-size: .7rem;
-                color: $brown500;
-                background-color: $soft-red;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: .5rem;
+                .rect{
+                    background-color: $soft-red;
+                    border-radius: .2rem;
+                    min-width: 1.8rem;
+                    max-width: 100%;
+                }
+                .text{
+                    color: $brown500;
+                    font-size: .7rem;
+                    text-align: center;
+                }
             }
         }
     }

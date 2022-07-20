@@ -74,14 +74,26 @@ main {
 .component-body__chart .table {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: flex-end;
+  margin-top: 1rem;
 }
 .component-body__chart .table__pillar {
-  list-style: none;
-  font-size: 0.7rem;
-  color: hsl(28deg, 10%, 53%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.component-body__chart .table__pillar .rect {
   background-color: hsl(10deg, 79%, 65%);
+  border-radius: 0.2rem;
+  min-width: 1.8rem;
+  max-width: 100%;
+}
+.component-body__chart .table__pillar .text {
+  color: hsl(28deg, 10%, 53%);
+  font-size: 0.7rem;
+  text-align: center;
 }
 .component-body__divider {
   background-color: hsl(27deg, 66%, 92%);
