@@ -1,0 +1,19 @@
+{
+  "name": "expenses-chart-component",
+  "version": "1.0.0",
+  "description": "Thanks for checking out this front-end coding challenge.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Squashim/expenses-chart-component.git"
+  },
+  "author": "Squashim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Squashim/expenses-chart-component/issues"
+  },
+  "homepage": "https://github.com/Squashim/expenses-chart-component#readme"
+}
