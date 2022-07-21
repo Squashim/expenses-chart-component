@@ -65,10 +65,10 @@ main {
   flex-direction: column;
   gap: 0.5rem;
 }
-.component-head__text p {
+.component-head__text p, h1 {
   color: hsl(33deg, 100%, 98%);
 }
-.component-head__text p:nth-child(1) {
+.component-head__text h1 {
   font-size: 0.9rem;
 }
 .component-head__text p:nth-child(2) {
