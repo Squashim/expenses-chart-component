@@ -34,6 +34,17 @@ main {
     padding: 2.5rem 0.5rem;
   }
 }
+@media (orientation: landscape) {
+  main {
+    max-width: 90vw;
+    max-height: 100vh;
+    padding: 1rem 0.5rem;
+  }
+}
+
+.hidden {
+  display: none;
+}
 
 .component-head {
   background-color: hsl(10deg, 79%, 65%);
@@ -111,10 +122,29 @@ main {
   gap: 0.5rem;
   width: 1.8rem;
   max-width: 100%;
+  position: relative;
 }
 @media (min-width: 30rem) {
   .component-body__chart .table__pillar {
     width: 2.5rem;
+  }
+}
+.component-body__chart .table__pillar .value {
+  background-color: hsl(25deg, 47%, 15%);
+  position: absolute;
+  text-align: center;
+  color: hsl(33deg, 100%, 98%);
+  font-weight: 700;
+  font-size: 0.5rem;
+  padding: 5px;
+  border-radius: 4px;
+  top: -2rem;
+  align-self: center;
+}
+@media (min-width: 30rem) {
+  .component-body__chart .table__pillar .value {
+    font-size: 0.9rem;
+    top: -2.5rem;
   }
 }
 .component-body__chart .table__pillar .rect {
@@ -205,4 +235,9 @@ footer {
 }
 footer .attribution a {
   color: hsl(10deg, 79%, 65%);
+}
+@media (orientation: landscape) {
+  footer {
+    overflow: hidden;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -1,50 +1,41 @@
-const rows = Array.from(document.querySelectorAll(".rect"));
-const daysName = Array.from(document.querySelectorAll(".text"));
+import chart from './data.json' assert {type: 'json'};
 
-let chart = [
-    {
-      "day": "mon",
-      "amount": 17.45
-    },
-    {
-      "day": "tue",
-      "amount": 34.91
-    },
-    {
-      "day": "wed",
-      "amount": 52.36
-    },
-    {
-      "day": "thu",
-      "amount": 31.07
-    },
-    {
-      "day": "fri",
-      "amount": 23.39
-    },
-    {
-      "day": "sat",
-      "amount": 43.28
-    },
-    {
-      "day": "sun",
-      "amount": 25.48
-    }
-  ]
+const rows = document.querySelectorAll(".rect");
 
-for(let i=0; i<chart.length; i++){
+initialize();
+
+function initialize(){
+  drawChart();
+  highlightToday();
+  chartResponse();
+}
+
+function drawChart(){
+  const daysName = document.querySelectorAll(".text");
+  for(let i=0; i<chart.length; i++){
     daysName[i].textContent = chart[i].day;
     rows[i].style.height = (chart[i].amount * 300) / 100 + "px";
+  }
 }
-highlightToday()
 
-rows.forEach(row => {
-  row.addEventListener('click', () => {
-    const button = document.createElement("button");
-    button.textContent = chart[row.id - 1].amount;
-    row.parentElement.prepend(button);
-  }); //todo buttons design and on off validation
-});
+function chartResponse(){
+  rows.forEach(row => {
+    const valueField = document.querySelectorAll(".value");
+    const number = row.parentElement.id;
+    const textValue = chart[number - 1].amount;
+    row.addEventListener('mouseenter', () => showText(valueField, number, textValue))
+    row.addEventListener('mouseleave', () => hideText(valueField, number));
+  })
+}
+
+function hideText(arr, num){
+  arr[num - 1].classList.add("hidden")
+}
+
+function showText(arr, num, text){
+  arr[num - 1].classList.remove("hidden");
+  arr[num - 1].textContent = "$"+text;
+}
 
 function highlightToday(){
   const date = new Date();

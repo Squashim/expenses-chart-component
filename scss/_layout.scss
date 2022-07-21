@@ -9,8 +9,15 @@ main{
     @include mobile{
         padding: 2.5rem .5rem;
     }
+    @include landscape{
+        max-width: 90vw;
+        max-height: 100vh;
+        padding: 1rem .5rem;
+    }
 }
-
+.hidden{
+    display: none;
+}
 
 .component-head{
     background-color: $soft-red;
@@ -88,8 +95,25 @@ main{
                 gap: .5rem;
                 width: 1.8rem;
                 max-width: 100%;
+                position: relative;
                 @include desktop{
                     width: 2.5rem;
+                }
+                .value{
+                    background-color: $brown900;
+                    position: absolute;
+                    text-align: center;
+                    color: $pale-orange;
+                    font-weight: $fw-bold;
+                    font-size: .5rem;
+                    padding: 5px;
+                    border-radius: 4px;
+                    top: -2rem;
+                    align-self: center;
+                    @include desktop{
+                        font-size: .9rem;
+                        top: -2.5rem;
+                    }
                 }
                 .rect{
                     background-color: $soft-red;
@@ -185,5 +209,8 @@ footer{
         a{
             color: $soft-red;
         }
+    }
+    @include landscape{
+        overflow: hidden;
     }
 }
