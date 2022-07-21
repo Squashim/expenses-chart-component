@@ -41,7 +41,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/responsive-expensive-chart-component-with-js-and-sass-f9yuRhJlMR](https://www.frontendmentor.io/solutions/responsive-expensive-chart-component-with-js-and-sass-f9yuRhJlMR)
 - Live Site URL: [https://squashim.github.io/expenses-chart-component/](https://squashim.github.io/expenses-chart-component/)
 
 ### Built with
