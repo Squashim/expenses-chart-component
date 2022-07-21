@@ -65,10 +65,10 @@ main {
   flex-direction: column;
   gap: 0.5rem;
 }
-.component-head__text p, h1 {
+.component-head__text p {
   color: hsl(33deg, 100%, 98%);
 }
-.component-head__text h1 {
+.component-head__text p:nth-child(1) {
   font-size: 0.9rem;
 }
 .component-head__text p:nth-child(2) {
@@ -97,14 +97,14 @@ main {
     padding: 1.5rem 2rem;
   }
 }
-.component-body__heading p {
+.component-body__heading h1 {
   color: hsl(25deg, 47%, 15%);
   font-weight: 700;
   font-size: 1.3rem;
   margin: 0.2rem auto;
 }
 @media (min-width: 30rem) {
-  .component-body__heading p {
+  .component-body__heading h1 {
     font-size: 1.6rem;
   }
 }
